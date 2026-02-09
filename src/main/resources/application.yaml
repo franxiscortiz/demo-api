@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: demo
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-pvjzm2o45tbpr08e.us.auth0.com/
+          audience: https://demo-java-api
+  logging:
+    level:
+      org.springframework.security: DEBUG
+      org.springframework.security.oauth2: DEBUG
+  server:
+    port: ${PORT:8080}
